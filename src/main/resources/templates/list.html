@@ -20,7 +20,10 @@
   <tr>
     <!-- TODO #2: Complete the View Jobs By Category Table. -->
 
-    <td></td> <!-- Feel free to remove or modify this element if necessary. -->
+    <td>
+    <a th:href="@{/list/jobs?column=all}" >View All</a> <!-- EO: td HTML cell element defines a single cell. it has a link, then text, that is
+     displaied as a link.  a - is anchor to create a clickable link -->
+    </td> <!-- Feel free to remove or modify this element if necessary. -->
 
     <td th:each="category : ${tableChoices}">
       <ul>
